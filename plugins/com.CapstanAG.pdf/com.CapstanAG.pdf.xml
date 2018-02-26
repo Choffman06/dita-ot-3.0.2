@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="com.CapstanAG.pdf">
+    <target name="dita2test-pdf.init">
+        <property name="args.chapter.layout" value="BASIC"/>
+        <property name="args.bookmark.style" value="COLLAPSED"/>
+        <property name="args.fo.include.rellinks" value="none"/>
+    </target>
+    <target name="dita2test-pdf" depends="dita2test-pdf.init,
+        dita2pdf2"/>
+</project>
